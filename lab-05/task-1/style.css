@@ -1,0 +1,83 @@
+/* Основний оранжевий блок */
+.main-box {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Заголовок */
+.main-box h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+}
+
+/* Загальні списки */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Маркерований список 1-го рівня (темно-зелений фон) */
+.list-1 {
+    background-color: rgb(103, 158, 128);
+    padding: 15px 20px 15px 20px;
+    list-style-position: inside;
+}
+
+/* Елементи 1-го рівня — тут ставимо іконку правила зліва від заголовка етапу */
+.list-1 > li {
+    margin-bottom: 15px;
+    background-image: url('icons/rule.png');
+    background-repeat: no-repeat;
+    background-position: left 5px;
+    background-size: 22px 22px;
+    padding-left: 30px; /* Відступ, щоб текст не наїжджав на іконку */
+}
+
+/* Рожево-коричневі плашки 1-го рівня */
+.list-1 > li > span {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+/* Маркерований список 2-го рівня (світло-зелений фон) */
+.list-2 {
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgb(153, 180, 102);
+    padding: 10px 15px 10px 30px;
+    margin-top: 5px;
+}
+
+/* Елементи 2-го рівня */
+.list-2 > li {
+    margin-bottom: 10px;
+}
+
+/* Помаранчеві плашки 2-го рівня із відступом для іконки всередині */
+.list-2 > li > span {
+    background-color: rgb(218, 106, 32);
+    display: inline-block;
+    padding: 8px 15px 8px 40px;
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 18px 18px;
+}
+
+/* Прив'язка іконок до конкретних пунктів 2-го рівня */
+.ico-phone > span { background-image: url('icons/ad_units.png'); }
+.ico-ticket > span { background-image: url('icons/airplane_ticket.png'); }
+.ico-hotel > span { background-image: url('icons/hotel.png'); }
+.ico-car > span { background-image: url('icons/car_rental.png'); }
+.ico-bar > span { background-image: url('icons/local_bar.png'); }
+.ico-casino > span { background-image: url('icons/casino.png'); }
+.ico-museum > span { background-image: url('icons/museum.png'); }
+.ico-fest > span { background-image: url('icons/festival.png'); }
