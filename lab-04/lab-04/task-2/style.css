@@ -1,0 +1,47 @@
+/* Загальний шрифт */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 1. Селектор тегу для заголовка */
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* 2. Селектор класу для підзаголовка */
+.subtitle {
+    text-align: center;
+    font-style: italic;
+}
+
+/* 3. Селектор класу для списку продуктів */
+.ingredients-list {
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Допоміжні класи для кольору та підкреслення */
+.green-text {
+    color: green;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+/* 4. Селектор тегу для лінії hr */
+hr {
+    border: none;
+    height: 3px;
+    background-color: green;
+    width: 60%;
+    margin: 20px auto;
+}
+
+/* 5. Селектор ідентифікатора (ID) для нижнього блоку */
+#bottom-note {
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Розклад тижня</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f6f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        /* Батьківський блочний елемент div по центру */
+        .container {
+            width: 750px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+        }
+        .days-list {
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+        .days-list li {
+            margin: 8px 0;
+        }
+        .days-list a {
+            font-size: 16px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .days-list a:hover {
+            text-decoration: underline;
+        }
+        .day-section {
+            margin-bottom: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+        }
+        h3 {
+            color: #333;
+            background-color: #e3f2fd;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px 10px;
+            text-align: center;
+            font-size: 13px;
+        }
+        th {
+            background-color: #bbdefb;
+        }
+        td {
+            background-color: #ffffff;
+        }
+        /* Блок для картинки 400х400 пікселів */
+        .image-box {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .image-box img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        .back-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .back-link {
+            font-size: 16px;
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Розклад занять: 145 група (2)</h1>
+
+<div class="container">
+
+    <!-- Маркований список із посиланнями-якірцями -->
+    <ul class="days-list">
+        <li><a href="#monday">Понеділок</a></li>
+        <li><a href="#tuesday">Вівторок</a></li>
+        <li><a href="#wednesday">Середа</a></li>
+        <li><a href="#thursday">Четвер</a></li>
+        <li><a href="#friday">П'ятниця</a></li>
+        <li><a href="#saturday">Субота (Вихідний)</a></li>
+        <li><a href="#sunday">Неділя (Вихідний)</a></li>
+    </ul>
+
+    <!-- Понеділок -->
+    <div id="monday" class="day-section">
+        <h3>Понеділок</h3>
+        <table>
+            <tr>
+                <th>Пара / Час</th>
+                <th>1-й тиждень</th>
+                <th>2-й тиждень</th>
+            </tr>
+            <tr>
+                <td>1 пара<br><small>8:20 - 9:40</small></td>
+                <td>Основи програмування та алгоритмічне мислення<br><small>Ватаманіца Е.В. (ауд. 8-112)</small></td>
+            <td>Основи програмування та алгоритмічне мислення<br><small>Ватаманіца Е.В. (ауд. 8-112)</small></td>
+            <tr>
+                <td>2 пара<br><small>9:50 - 11:10</small></td>
+            <td>Дискретна математика<br><small>Яцько О.М.(ауд. 9-3)</small></td>
+            <td>Дискретна математика<br><small>Яцько О.М.(ауд. 9-3)</small></td>
+            <tr>
+        </table>
+        <div class="image-box">
+            <img src="../img/m.jpg" alt="Малюнок для понеділка">
+        </div>
+    </div>
+
+    <!-- Вівторок -->
+    <div id="tuesday" class="day-section">
+        <h3>Вівторок</h3>
+        <table>
+            <tr>
+                <th>Пара / Час</th>
+                <th>1-й тиждень</th>
+                <th>2-й тиждень</th>
+            </tr>
+            <tr>
+                <td>1 пара<br><small>8:20 - 9:40</small></td>
+                <td>Вища математика<br><small> Антонюк С.В.(ауд.8-117 )</small></td>
+                <td>Вища математика<br><small>Антонюк С.В.(ауд. 8-117)</small></td>
+            </tr>
+            <tr>
+                <td>2 пара<br><small>9:50 - 11:10</small></td>
+                <td>Вища математика<br><small> Малик І.В.(ауд. 9-3)</small></td>
+                <td>Вища математика<br><small> Малик І.В.(ауд. 9-3)</small></td>
+               </tr>
+            <td>3 пара<br><small>11:30 - 12:50</small></td>
+            <td>Дискретна математика<br><small>Яцько О.М.(ауд. 8-111)</small></td>
+            <td>Дискретна математика<br><small>Яцько О.М.(ауд. 8-111)</small></td>
+            </tr>
+            <td>4 пара<br><small>12:50 - 14:10</small></td>
+            <td></td>
+            <td>Актуальні питання історії та культури України<br><small>Гуйванюк М.Р.(ауд. 8-117)</small></td>
+        </table>
+        <div class="image-box">
+            <img src="../img/вівторок.jpg" alt="Малюнок для вівторка">
+        </div>
+    </div>
+    <!-- Середа -->
+<div id="wednesday" class="day-section">
+    <h3>Середа</h3>
+    <table>
+        <tr>
+            <th>Пара / Час</th>
+            <th>1-й тиждень</th>
+            <th>2-й тиждень</th>
+        </tr>
+        <tr>
+            <td>1 пара<br><small>8:20 - 9:40</small></td>
+            <td>Архітектура комп'ютерних наук<br><small>Ковальчук М.Л. (Ауд. 8-114)</small></td>
+            <td>Архітектура комп'ютерних наук<br><small>Ковальчук М.Л. (Ауд. 8-114)</small></td>
+        </tr>
+        <tr>
+            <td>2 пара<br><small>9:50 - 11:10</small></td>
+            <td>Архітектура комп'ютерних наук<br><small>Ковальчук М.Л. (Ауд. 8-117)</small></td>
+            <td>Архітектура комп'ютерних наук<br><small>Ковальчук М.Л. (Ауд. 8-117)</small></td>
+        </tr>
+        <tr>
+        <td>3 пара<br><small>11:10 - 12:50</small></td>
+        <td>Технології веброзробки<br><small>Караченцев А.О. (Ауд. 8-112)</small></td>
+        <td>Технології веброзробки<br><small>Караченцев А.О. (Ауд. 8-112)</small></td>
+        </tr>
+        <tr>
+        <td>4 пара<br><small>12:50 - 14:10</small></td>
+        <td>Іноземна мова (за професійним спрямуванням)<br><small>Кшвецький В.С.(Ауд. 8-120)</small></td>
+        <td>Іноземна мова (за професійним спрямуванням)<br><small>Кшвецький В.С.(Ауд. 8-120)</small></td>
+        </tr>
+    </table>
+    <div class="image-box">
+        <img src="../img/середа.jpg" alt="Малюнок для середи">
+    </div>
+</div>
+
+<!-- Четвер -->
+<div id="thursday" class="day-section">
+    <h3>Четвер</h3>
+    <table>
+        <tr>
+            <th>Пара / Час</th>
+            <th>1-й тиждень</th>
+            <th>2-й тиждень</th>
+        </tr>
+        <tr>
+            <td>1 пара<br><small>8:20 - 9:40</small></td>
+            <td></td>
+            <td>Актуальні питання історії та культури України<br><small>Юрій М.Ф.(Ауд. 9-2)</small></td>
+        </tr>
+        <tr>
+            <td>2 пара<br><small>9:50 - 11:10</small></td>
+            <td>Дискретна математика<br><small>Яцько О.М.(ауд. 9-3)</small></td>
+            <td>Вища математика<br><small> Антонюк С.В.(ауд.8-212 )</small></td>
+        </tr>
+        <tr>
+            <td>3 пара<br><small>11:10 -12:50</small></td>
+            <td>Технології веброзробки<br><small>Яцько О.М. (Ауд. 9-3)</small></td>
+            <td>Технології веброзробки<br><small>Яцько О.М. (Ауд. 9-3)</small></td>
+        </tr>
+    </table>
+    <div class="image-box">
+        <img src="../img/download.jpg" alt="Малюнок для четверга">
+    </div>
+</div>
+
+<!-- П'ятниця -->
+<div id="friday" class="day-section">
+    <h3>П'ятниця</h3>
+    <table>
+        <tr>
+            <th>Пара / Час</th>
+            <th>1-й тиждень</th>
+            <th>2-й тиждень</th>
+        </tr>
+        <tr>
+            <td>1 пара<br><small>8:20 - 9:40</small></td>
+        <td>Основи національного спротиву<br><small>Військова кафедра</small></td>
+        <td>Основи програмування та алгоритмічне мислення<br><small>Довгунь А.Я.(Ауд. 8-224)</small></td>
+        </tr>
+        <tr>
+            <td>2 пара<br><small>9:50 - 11:10</small></td>
+            <td>Основи національного спротиву<br><small>Військова кафедра</small></td>
+            <td>Основи програмування та алгоритмічне мислення<br><small>Довгунь А.Я.(Ауд. 8-224)</small></td>
+        </tr>
+        <tr>
+            <td>3 пара<br><small>11:10 - 12:50</small></td>
+            <td>Основи національного спротиву<br><small>Військова кафедра</small></td>
+            <td>Основи програмування та алгоритмічне мислення<br><small>Ватаманіца Е.В.(Ауд. 8-112)</small></td>
+        </tr>
+        <tr>
+            <td>4 пара<br><small>12:50 - 14:10</small></td>
+            <td>Дискретна математика<br><small>Яцько О.М.(ауд. 8-120)</small></td>
+            <td>Дискретна математика<br><small>Яцько О.М.(ауд. 8-120)</small></td>
+        </tr>
+    </table>
+    <div class="image-box">
+        <img src="../img/download (1).jpg" alt="Малюнок для п'ятниці">
+    </div>
+</div>
+
+<!-- Субота (Вихідний) -->
+<div id="saturday" class="day-section">
+    <h3>Субота (Вихідний день)</h3>
+    <table>
+        <tr>
+            <th>Час</th>
+            <th>Розклад вільного часу</th>
+        </tr>
+        <tr>
+            <td>10:00 - 12:00</td>
+            <td>Вивчення англійської мови та повторення матеріалу</td>
+        </tr>
+        <tr>
+            <td>14:00 - 16:00</td>
+            <td>Фізичні тренування / спорт</td>
+        </tr>
+    </table>
+    <div class="image-box">
+        <img src="../img/download (2).jpg" alt="Малюнок для суботи">
+    </div>
+</div>
+
+<!-- Неділя (Вихідний) -->
+<div id="sunday" class="day-section">
+    <h3>Неділя (Вихідний день)</h3>
+    <table>
+        <tr>
+            <th>Час</th>
+            <th>Розклад вільного часу</th>
+        </tr>
+        <tr>
+            <td>11:00 - 13:00</td>
+            <td>Прогулянка на свіжому повітрі та відпочинок</td>
+        </tr>
+        <tr>
+            <td>15:00 - 18:00</td>
+            <td>Хобі та творчість</td>
+        </tr>
+    </table>
+    <div class="image-box">
+        <img src="../img/download (3).jpg" alt="Малюнок для неділі">
+    </div>
+</div>
+
+<div class="back-container">
+    <a class="back-link" href="../index.html">Повернутись на головну</a>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* 2. Універсальний селектор */
+* {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* 3. Селектор тегів для абзаців та div */
+p {
+    color: green;
+    text-align: center;
+}
+
+div {
+    text-align: justify;
+}
+
+/* 4. Червоний колір для 1-го та 3-го абзаців */
+.red-text {
+    color: red;
+}
+
+/* 5. Заборона перенесення рядка для 1-го абзацу */
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* 6. Курсив та жирний для 2-го абзацу через ID */
+#special-p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* 7. Червона тінь для 2-го абзацу та 2-го блоку */
+.shadow-effect {
+    text-shadow: 5px -5px 3px red;
+}
+
+/* 8. Стилі для 1-го блоку (div) */
+.block-one {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-indent: 50px;
+}
+
+/* 9. Стилі для 2-го блоку (div) */
+.block-two {
+    letter-spacing: 30px;
+    word-spacing: 50px;
+}

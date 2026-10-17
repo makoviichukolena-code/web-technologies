@@ -5,54 +5,63 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web technologies practice: basic HTML tags</title>
+    <title>Лабораторна робота №3 - Головна</title>
     <style>
         body {
             text-align: center; /* Центрування вмісту сторінки */
             font-family: Arial, sans-serif;
+            margin-top: 50px;
         }
         header {
-            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        /* Стилізація блока main за зразком */
+        main {
+            display: inline-block;
+            text-align: left;
+            border: 2px solid red; /* Червона рамка навколо main як на схемі */
+            padding: 20px 40px;
+            margin: 0 auto;
+        }
+        main h2 {
+            color: green; /* Зелений заголовок 2-го рівня як на схемі */
+            margin-top: 0;
         }
         main ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: disc; /* Маркований список */
+            padding-left: 20px;
         }
         main li {
-            margin: 12px 0;
+            margin: 10px 0;
         }
         /* Кегель гіперпосилань 16px згідно вимог */
         main a {
             font-size: 16px;
             text-decoration: none;
-            color: #0066cc;
+            color: #000000;
         }
         main a:hover {
             text-decoration: underline;
+            color: #0066cc;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Web technologies practice: basic HTML tags</h1>
+    <h1>Лабораторна робота №3</h1>
 </header>
 
 <main>
-    <h2>Індивідуальні завдання</h2>
+    <h2>Індивідуальні завдання:</h2>
     <ul>
-        <!-- Кожне завдання веде до папки project_parts і відкривається в новому вікні -->
-        <li><a href="project_parts/table.html" target="_blank">Завдання 1: Таблиця</a></li>
-        <li><a href="project_parts/mondrian.html" target="_blank">Завдання 2: Картина Піта Мондріана</a></li>
-        <li><a href="project_parts/schedule.html" target="_blank">Завдання 3: Розклад занять</a></li>
-        <li><a href="project_parts/questionnaire.html" target="_blank">Завдання 4: Форма анкети</a></li>
-        <li><a href="project_parts/map.html" target="_blank">Завдання 5: Інтерактивна карта України</a></li>
+        <li><a href="project_parts/table.html" target="_blank">Завдання 1</a></li>
+        <li><a href="project_parts/mondrian.html" target="_blank">Завдання 2</a></li>
+        <li><a href="project_parts/schedule.html" target="_blank">Завдання 3</a></li>
+        <li><a href="project_parts/questionnaire.html" target="_blank">Завдання 4</a></li>
+        <li><a href="project_parts/map.html" target="_blank">Завдання 5</a></li>
     </ul>
 </main>
-
-<footer>
-    <p>&copy; Лабораторна робота №3</p>
-</footer>
 
 </body>
 </html>

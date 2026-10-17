@@ -1,0 +1,61 @@
+
+/* 1. Курсивність, жирність, підкреслення лише для тегів span, що знаходяться в середині тегів p з класом .text-background */
+p.text-background span {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 2. Колір фону жовтий лише для тегів span усередині .text-background, які знаходяться в тезі div */
+div p.text-background span {
+    background-color: yellow;
+}
+
+/* 3. Колір фону сірий і текст перекреслений лише для тегів span, що знаходяться в середині інших span */
+span span {
+    background-color: gray;
+    text-decoration: line-through;
+}
+
+/* 4. Розмір шрифту 18px та верхній регістр лише для тегів span всередині інших span, які знаходяться в нумерованому списку (ol) */
+ol span span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* 5. Тінь тексту та відступ першого рядка 50px лише для тих абзаців, які розташовані в тезі section на першому рівні вкладеності */
+section > p {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    text-indent: 50px;
+}
+
+/* 6. Замінити маркер списку на зображення лише для елементів ul, розташованих безпосередньо в li */
+li > ul {
+    list-style-image: url('marker.png');
+}
+
+/* 7. Інтервал між словами 50px лише для абзаців з класом .text-background на першому рівні вкладеності в тезі div */
+div > p.text-background {
+    word-spacing: 50px;
+}
+
+/* 8. Жирність лише для абзаців на першому рівні вкладеності в тезі div з класом .text-bold */
+div.text-bold > p {
+    font-weight: bold;
+}
+
+/* 9. Міжрядковий інтервал 45px лише для абзаців на першому рівні вкладеності в section, який є прямим нащадком div з класом .text-bold */
+div.text-bold > section > p {
+    line-height: 45px;
+}
+
+/* 10. Колір фону коричневий лише для абзаців, розташованих відразу за елементом img (сусідні елементи-сиблінги) */
+img + p {
+    background-color: brown;
+    color: white;
+}
+
+/* 11. Колір тексту червоний лише для абзаців, розташованих після елемента section на тому ж рівні вкладеності */
+section ~ p {
+    color: red;
+}
