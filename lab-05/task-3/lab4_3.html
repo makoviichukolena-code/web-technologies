@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3 - Форма анкети</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Анкета користувача</h2>
+    <form>
+        <fieldset>
+            <legend>Особисті дані</legend>
+
+            <div class="form-group">
+                <label>ПІБ (Текстове поле):</label>
+                <input type="text" placeholder="Введіть ваші ПІБ">
+            </div>
+
+            <div class="form-group">
+                <label>Пароль (6 символів, 1 мала, 1 велика літера, 1 цифра):</label>
+                <input type="password" placeholder="Наприклад: Pass12">
+            </div>
+
+            <div class="form-group">
+                <label>Email (з вимкненим автозаповненням):</label>
+                <input type="email" autocomplete="off" placeholder="example@mail.com">
+            </div>
+
+            <div class="form-group">
+                <label>Телефон:</label>
+                <input type="tel" placeholder="+380XXXXXXXXX">
+            </div>
+
+            <div class="form-group">
+                <label>Дата народження:</label>
+                <input type="date">
+            </div>
+
+            <div class="form-group">
+                <label>Місто (підказки datalist):</label>
+                <input type="text" list="cities" placeholder="Оберіть або введіть місто">
+                <datalist id="cities">
+                    <option value="Київ">
+                    <option value="Львів">
+                    <option value="Чернівці">
+                    <option value="Одеса">
+                </datalist>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Навчання та вибір</legend>
+
+            <div class="form-group">
+                <label>Освітній рівень (Radio block 1):</label>
+                <label class="inline-label"><input type="radio" name="edu"> Бакалавр</label>
+                <label class="inline-label"><input type="radio" name="edu"> Магістр</label>
+                <label class="inline-label"><input type="radio" name="edu"> Ph.D</label>
+            </div>
+
+            <div class="form-group">
+                <label>Форма навчання (Radio block 2):</label>
+                <label class="inline-label"><input type="radio" name="form" checked> Денна</label>
+                <label class="inline-label"><input type="radio" name="form"> Заочна</label>
+                <label class="inline-label"><input type="radio" name="form"> Дистанційна</label>
+            </div>
+
+            <div class="form-group">
+                <label>Мови програмування (Checkboxes - 4 значення):</label>
+                <label class="inline-label"><input type="checkbox"> C++</label>
+                <label class="inline-label"><input type="checkbox"> Python</label>
+                <label class="inline-label"><input type="checkbox"> JavaScript</label>
+                <label class="inline-label"><input type="checkbox"> HTML/CSS</label>
+            </div>
+
+            <div class="form-group">
+                <label>Курс навчання:</label>
+                <select>
+                    <option>1 курс</option>
+                    <option>2 курс</option>
+                    <option selected>3 курс (Default)</option>
+                    <option>4 курс</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Інтереси (Множинний вибір):</label>
+                <select multiple size="4">
+                    <option>Штучний інтелект</option>
+                    <option>Веб-розробка</option>
+                    <option>Мобільна розробка</option>
+                    <option>Кібербезпека</option>
+                    <option>UI/UX Дизайн</option>
+                    <option>GameDev</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Файли та коментарі</legend>
+
+            <div class="form-group">
+                <label>Завантаження аудіофайлів:</label>
+                <input type="file" multiple accept="audio/*">
+            </div>
+
+            <div class="form-group">
+                <label>Про себе (Textarea):</label>
+                <textarea rows="4" placeholder="Напишіть декілька слів про свої захоплення..."></textarea>
+            </div>
+        </fieldset>
+
+        <div class="button-group">
+            <button type="submit" class="btn-submit">Надіслати (Submit)</button>
+            <button type="reset" class="btn-reset">Скинути (Reset)</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

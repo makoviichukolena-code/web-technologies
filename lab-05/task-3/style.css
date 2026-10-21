@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f3e8ff; /* Дуже світлий фіолетовий фон */
+    color: #2e1065;
+}
+
+.form-container {
+    width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border: 2px solid #9333ea; /* Фіолетова рамка */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(147, 51, 234, 0.15);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #4b0082;
+    margin-top: 0;
+}
+
+fieldset {
+    border: 1px solid #d8b4fe;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #faf5ff;
+}
+
+legend {
+    font-weight: bold;
+    color: #7e22ce;
+    padding: 0 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #581c87;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #c084fc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #7e22ce;
+    outline: none;
+    box-shadow: 0 0 5px rgba(126, 34, 206, 0.3);
+}
+
+.inline-label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-submit {
+    flex: 1;
+    background-color: #22c55e; /* Зелена кнопка як на зразку */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #16a34a;
+}
+
+.btn-reset {
+    flex: 1;
+    background-color: #dc2626; /* Червона кнопка як на зразку */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-reset:hover {
+    background-color: #b91c1c;
+}

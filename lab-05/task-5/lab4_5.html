@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 5 - box-sizing, overflow та display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Частина 1: box-sizing -->
+<section>
+    <h2>1. Властивість box-sizing</h2>
+    <div class="box-content">
+        Блок з box-sizing: content-box.<br>
+        Загальна ширина: 300px (width) + 40px (padding) + 10px (border) = <strong>350px</strong>
+    </div>
+    <div class="box-border">
+        Блок з box-sizing: border-box.<br>
+        Загальна ширина: <strong>300px</strong> (ширина включає padding та border рамку)
+    </div>
+</section>
+
+<hr>
+
+<!-- Частина 2: overflow -->
+<section>
+    <h2>2. Властивість overflow</h2>
+
+    <div class="overflow-block ov-visible">
+        <strong>overflow: visible;</strong> Довгий текст: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+    </div>
+
+    <div class="overflow-block ov-hidden">
+        <strong>overflow: hidden;</strong> Довгий текст: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+    </div>
+
+    <div class="overflow-block ov-scroll">
+        <strong>overflow: scroll;</strong> Довгий текст: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+    </div>
+
+    <div class="overflow-block ov-auto">
+        <strong>overflow: auto;</strong> Довгий текст: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+    </div>
+</section>
+
+<hr>
+
+<!-- Частина 3: display (горизонтальне меню) -->
+<section>
+    <h2>3. Властивість display (Горизонтальне меню)</h2>
+    <nav>
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li class="hidden-item"><a href="#">Послуги</a></li> <!-- Приховано через display: none -->
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+</section>
+
+</body>
+</html>

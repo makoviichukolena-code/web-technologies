@@ -1,0 +1,46 @@
+/* Общие стили для всех блоков по условиям задания */
+div {
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;     /* Внешний отступ между блоками в ряд */
+    margin-bottom: 20px;
+    padding: 15px;          /* Внутренний отступ */
+    box-sizing: border-box;
+    display: inline-block;  /* Расположение блоков в ряд */
+    vertical-align: top;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(75, 0, 130, 0.25);
+}
+
+/* Блок 1: Диагональные полосы двух оттенков одного цвета, 45deg, четкие границы на 50%, background-size: 40px 40px */
+.block-1 {
+    background-image: linear-gradient(45deg, #7e22ce 50%, #9333ea 50%);
+    background-size: 40px 40px;
+}
+
+/* Блок 2: Фон в виде клеток (два линейных градиента под прямым углом, один из цветов с полупрозрачностью rgba) */
+.block-2 {
+    background-image:
+            linear-gradient(90deg, rgba(216, 180, 254, 0.4) 50%, transparent 50%),
+            linear-gradient(0deg, rgba(216, 180, 254, 0.4) 50%, transparent 50%);
+    background-color: #581c87;
+    background-size: 30px 30px;
+}
+
+/* Блок 3: Радиальный градиент формы circle с начальной точкой 30px 20px, не менее трех цветов с явными позициями, размер farthest-corner */
+.block-3 {
+    background-image: radial-gradient(circle farthest-corner at 30px 20px, #e9d5ff 0%, #a855f7 50%, #3b0764 100%);
+}
+
+/* Блок 4: Два фона одновременно (полупрозрачный градиент поверх сплошного цвета), no-repeat, ширина 100%, высота 50%, прижат к нижнему краю */
+.block-4 {
+    background-color: #4b0082;
+    background-image: linear-gradient(to top, rgba(216, 180, 254, 0.6), rgba(126, 34, 206, 0.1));
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 50%;
+}

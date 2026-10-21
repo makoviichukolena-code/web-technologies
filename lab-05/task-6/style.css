@@ -1,0 +1,83 @@
+/* ================= ЗАВДАННЯ 6: Сайт-візитка у найсвітліших рожевих тонах ================= */
+
+/* Фонове зображення сторінки згідно з вимогами та заготовкою */
+body {
+    background-color: #fff1f2; /* Найсвітліший запасний рожевий колір фону */
+    background-image: url('../img/background.jpg'); /* Шлях до вашої картинки в папці img */
+    background-repeat: no-repeat; /* */
+    background-position: center; /* */
+    background-size: cover; /* */
+    background-attachment: fixed; /* Зображення залишається нерухомим під час прокручування сторінки */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Центральний контейнер (main) */
+.container {
+    max-width: 900px; /* */
+    min-width: 320px; /* */
+    margin: 0 auto; /* Центрування за допомогою margin: 0 auto */
+    padding: 20px; /* */
+    box-sizing: border-box; /* */
+    background-color: rgba(255, 241, 242, 0.9); /* Напівпрозорий світлий пастельно-рожевий фон, щоб було видно фонове зображення сторінки */
+    border-radius: 12px;
+    color: #4c0519; /* Темно-рожевий текст для гарної читабельності */
+    box-shadow: 0 8px 25px rgba(244, 63, 94, 0.15);
+    /*
+      Пояснення щодо поведінки контейнера при звуженні вікна нижче 320px:
+      Якщо ширина вікна браузера стає вужчою за min-width (320px), контейнер припиняє стискатися далі й зберігає фіксовану мінімальну ширину 320px, через що у вікні браузера може з'явитися горизонтальна смуга прокручування.
+    */
+}
+
+.container h1, .container h2 {
+    color: #9f1239;
+    border-bottom: 1px solid #fda4af;
+    padding-bottom: 5px;
+}
+
+.container section {
+    margin-bottom: 30px;
+    background-color: rgba(254, 205, 211, 0.4); /* Дуже ніжний напівпрозорий фон секцій */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(244, 63, 94, 0.2);
+}
+
+
+/* ================= Блок «Теги» (display) ================= */
+.inline-div {
+    display: inline; /* Перетворення на рядкові елементи */
+    width: 200px;    /* */
+    height: 100px;   /* */
+    background-color: #fecdd3;
+    margin-right: 5px;
+    border: 1px solid #fda4af;
+    color: #881337;
+}
+/*
+  Чому значення width та height не діють на .inline-div?
+  Тому що для рядкових елементів (display: inline) властивості ширини (width) та висоти (height) ігноруються браузером — їхні розміри визначаються виключно розміром їхнього внутрішнього контенту.
+*/
+
+.block-span {
+    display: block;  /* Перетворення на блокові елементи */
+    width: 150px;    /* */
+    background-color: #fda4af;
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 1px solid #fb7185;
+    color: #881337;
+}
+/* Тут width діє, оскільки елементи стали блоковими, і вони розташовуються стовпчиком (кожне з нового рядка). */
+
+
+/* ================= Блок «Повторення фону» (background-repeat) ================= */
+.bg-block {
+    height: 200px;
+    border: 2px solid #fda4af;
+    margin-bottom: 15px;
+    background-image: url('../img/icon.png'); /* Маленька картинка-іконка (наприклад, 60x60px) */
+    background-color: #fff5f5;
+    padding: 10px;
+    border-radius: 6
