@@ -1,33 +1,27 @@
-/* ================= ЗАВДАННЯ 6: Сайт-візитка у найсвітліших рожевих тонах ================= */
-
-/* Фонове зображення сторінки згідно з вимогами та заготовкою */
+/* Фонове зображення сторінки */
 body {
-    background-color: #fff1f2; /* Найсвітліший запасний рожевий колір фону */
-    background-image: url('../img/background.jpg'); /* Шлях до вашої картинки в папці img */
-    background-repeat: no-repeat; /* */
-    background-position: center; /* */
-    background-size: cover; /* */
-    background-attachment: fixed; /* Зображення залишається нерухомим під час прокручування сторінки */
+    background-color: #fff1f2;
+    background-image: url('../task-1/icons/photo_5386419087392579324_y (1).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 /* Центральний контейнер (main) */
 .container {
-    max-width: 900px; /* */
-    min-width: 320px; /* */
-    margin: 0 auto; /* Центрування за допомогою margin: 0 auto */
-    padding: 20px; /* */
-    box-sizing: border-box; /* */
-    background-color: rgba(255, 241, 242, 0.9); /* Напівпрозорий світлий пастельно-рожевий фон, щоб було видно фонове зображення сторінки */
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 241, 242, 0.9);
     border-radius: 12px;
-    color: #4c0519; /* Темно-рожевий текст для гарної читабельності */
+    color: #4c8519;
     box-shadow: 0 8px 25px rgba(244, 63, 94, 0.15);
-    /*
-      Пояснення щодо поведінки контейнера при звуженні вікна нижче 320px:
-      Якщо ширина вікна браузера стає вужчою за min-width (320px), контейнер припиняє стискатися далі й зберігає фіксовану мінімальну ширину 320px, через що у вікні браузера може з'явитися горизонтальна смуга прокручування.
-    */
 }
 
 .container h1, .container h2 {
@@ -38,46 +32,93 @@ body {
 
 .container section {
     margin-bottom: 30px;
-    background-color: rgba(254, 205, 211, 0.4); /* Дуже ніжний напівпрозорий фон секцій */
+    background-color: rgba(254, 205, 211, 0.4);
     padding: 15px;
     border-radius: 8px;
     border: 1px solid rgba(244, 63, 94, 0.2);
 }
 
-
-/* ================= Блок «Теги» (display) ================= */
+/* Блок «Теги» (display: inline) */
 .inline-div {
-    display: inline; /* Перетворення на рядкові елементи */
-    width: 200px;    /* */
-    height: 100px;   /* */
-    background-color: #fecdd3;
+    display: inline;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(252, 221, 211);
     margin-right: 5px;
     border: 1px solid #fda4af;
     color: #881337;
 }
-/*
-  Чому значення width та height не діють на .inline-div?
-  Тому що для рядкових елементів (display: inline) властивості ширини (width) та висоти (height) ігноруються браузером — їхні розміри визначаються виключно розміром їхнього внутрішнього контенту.
-*/
 
+/* Блок «Теги» (display: block) */
 .block-span {
-    display: block;  /* Перетворення на блокові елементи */
-    width: 150px;    /* */
+    display: block;
+    width: 150px;
     background-color: #fda4af;
     margin-bottom: 5px;
     padding: 8px;
     border: 1px solid #fb7185;
     color: #881337;
 }
-/* Тут width діє, оскільки елементи стали блоковими, і вони розташовуються стовпчиком (кожне з нового рядка). */
 
-
-/* ================= Блок «Повторення фону» (background-repeat) ================= */
+/* Блок «Повторення фону» */
 .bg-block {
     height: 200px;
     border: 2px solid #fda4af;
     margin-bottom: 15px;
-    background-image: url('../img/icon.png'); /* Маленька картинка-іконка (наприклад, 60x60px) */
+    background-image: url('../task-1/icons/museum.png');
     background-color: #fff5f5;
     padding: 10px;
-    border-radius: 6
+    border-radius: 6px;
+}
+
+.repeat-x {
+    background-repeat: repeat-x;
+}
+
+.repeat-y {
+    background-repeat: repeat-y;
+}
+
+.bg-space {
+    background-repeat: space;
+}
+
+.bg-round {
+    background-repeat: round;
+}
+
+/* Блок «Масштабування» */
+.size-contain {
+    background-image: url('../task-1/icons/photo_5386419087392579324_y (1).jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.size-cover {
+    background-image: url('../task-1/icons/photo_5386419087392579324_y (1).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Блок «Прокручування фону» */
+.scroll-block {
+    max-height: 150px;
+    overflow: auto;
+    background-image: url('../task-1/icons/museum.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #fda4af;
+    border-radius: 6px;
+}
+
+.att-scroll {
+    background-attachment: scroll;
+}
+
+.att-local {
+    background-attachment: local;
+}

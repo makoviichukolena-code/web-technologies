@@ -22,24 +22,24 @@ ul {
     padding: 0;
 }
 
-/* Маркерований список 1-го рівня (темно-зелений фон) */
+/* Маркерований список 1 рівня  */
 .list-1 {
     background-color: rgb(103, 158, 128);
     padding: 15px 20px 15px 20px;
     list-style-position: inside;
 }
 
-/* Елементи 1-го рівня — тут ставимо іконку правила зліва від заголовка етапу */
+/* Елементи 1 рівня */
 .list-1 > li {
     margin-bottom: 15px;
     background-image: url('icons/rule.png');
     background-repeat: no-repeat;
     background-position: left 5px;
     background-size: 22px 22px;
-    padding-left: 30px; /* Відступ, щоб текст не наїжджав на іконку */
+    padding-left: 30px; /* Відступ*/
 }
 
-/* Рожево-коричневі плашки 1-го рівня */
+/* Рожево-коричневі плашки 1 рівня */
 .list-1 > li > span {
     font-size: 20px;
     font-weight: 700;
@@ -49,21 +49,24 @@ ul {
     margin-bottom: 10px;
 }
 
-/* Маркерований список 2-го рівня (світло-зелений фон) */
+/* Маркерований список 2 рівня*/
 .list-2 {
     font-size: 18px;
     font-style: italic;
-    background-color: rgb(153, 180, 102);
-    padding: 10px 15px 10px 30px;
-    margin-top: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
 }
 
-/* Елементи 2-го рівня */
+
+/* Елементи 2 рівня */
 .list-2 > li {
+    background-color: rgb(153, 180, 102);
     margin-bottom: 10px;
+    padding: 5px 10px;
 }
 
-/* Помаранчеві плашки 2-го рівня із відступом для іконки всередині */
+/* Помаранчеві плашки 2 рівня із відступом для іконки всередині */
 .list-2 > li > span {
     background-color: rgb(218, 106, 32);
     display: inline-block;
@@ -73,7 +76,7 @@ ul {
     background-size: 18px 18px;
 }
 
-/* Прив'язка іконок до конкретних пунктів 2-го рівня */
+/* Прив'язка іконок до конкретних пунктів 2 рівня */
 .ico-phone > span { background-image: url('icons/ad_units.png'); }
 .ico-ticket > span { background-image: url('icons/airplane_ticket.png'); }
 .ico-hotel > span { background-image: url('icons/hotel.png'); }

@@ -7,13 +7,12 @@ table {
     color: #333;
 }
 
-/* Шапка таблиці (головний рядок) */
+/* Шапка таблиці  */
 thead tr {
-    background-color: #4b0082; /* Найтемніший фіолетовий (Indigo) */
+    background-color: #4b0082;
     color: white;
 }
 
-/* Перший елемент шапки (лівий верхній кут) робимо ще трохи темнішим або в тон */
 thead th:first-child {
     background-color: #36015a;
 }
@@ -21,10 +20,9 @@ thead th:first-child {
 /* Заголовки та комірки таблиці */
 th, td {
     padding: 14px 10px;
-    border: 1px solid #d8bfd8; /* Світло-фіолетова рамка */
+    border: 1px solid #d8bfd8;
 }
 
-/* Колонки з тарифами (градієнтна фіолетова гамма від світлого до темного) */
 thead th:nth-child(2) { background-color: #d8b4fe; color: #2e1065; }
 thead th:nth-child(3) { background-color: #c084fc; color: white; }
 thead th:nth-child(4) { background-color: #9333ea; color: white; }
@@ -39,13 +37,13 @@ tbody td:first-child {
     padding-left: 15px;
 }
 
-/* Чергування кольорів рядків для тіла таблиці (від світло-фіолетового до ніжного бузкового) */
+
 tbody tr:nth-child(odd) {
-    background-color: #f3e8ff; /* Дуже світлий фіолетовий */
+    background-color: #f3e8ff;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #e9d5ff; /* Трохи насиченіший бузковий */
+    background-color: #e9d5ff;
 }
 
 /* Текст у комірках */

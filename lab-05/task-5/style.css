@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f3e8ff; /* Светло-фиолетовый фон */
+    background-color: #f3e8ff;
     color: #2e1065;
 }
 
@@ -18,7 +18,7 @@ hr {
     margin: 30px 0;
 }
 
-/* ================= Частина 1: box-sizing ================= */
+/* Частина 1: box-sizing */
 section div.box-content,
 section div.box-border {
     width: 300px;
@@ -34,18 +34,18 @@ section div.box-border {
 }
 
 div.box-content {
-    box-sizing: content-box; /* Ширина контента 300px + padding + border */
+    box-sizing: content-box;
 }
 
 div.box-border {
-    box-sizing: border-box; /* Загальна ширина фіксована на 300px */
+    box-sizing: border-box;
 }
 
 
-/* ================= Частина 2: overflow ================= */
+/* Частина 2: overflow */
 .overflow-block {
     width: 250px;
-    max-height: 80px; /* Висота обмежена за вимогами */
+    max-height: 80px; /* Висота обмежена */
     border: 2px solid #9333ea;
     padding: 10px;
     margin-right: 15px;
@@ -58,25 +58,25 @@ div.box-border {
 }
 
 .ov-visible {
-    overflow: visible; /* Текст виходить за межі блоку */
+    overflow: visible;
 }
 
 .ov-hidden {
-    overflow: hidden; /* Текст обрізається, зайве приховано */
+    overflow: hidden;
 }
 
 .ov-scroll {
-    overflow: scroll; /* Завжди відображаються смуги прокрутки */
+    overflow: scroll;
 }
 
 .ov-auto {
-    overflow: auto; /* Смуга прокрутки з'являється лише тоді, коли текст не поміщається */
+    overflow: auto;
 }
 
 
-/* ================= Частина 3: display (Меню) ================= */
+/*Частина 3: display */
 nav ul {
-    list-style-type: none; /* Приховати маркери списку за вимогами */
+    list-style-type: none;
     padding: 0;
     margin: 0;
     background-color: #4b0082;
@@ -85,11 +85,11 @@ nav ul {
 }
 
 nav ul > li {
-    display: inline-block; /* Елементи li в ряд без використання float та flex */
+    display: inline-block;
 }
 
 nav ul > li > a {
-    display: block; /* Елементи a як блокові елементи всередині inline-block */
+    display: block;
     padding: 10px 20px; /* Внутрішні відступи */
     color: #ffffff;
     text-decoration: none;
@@ -101,14 +101,7 @@ nav ul > li > a {
 nav ul > li > a:hover {
     background-color: #7e22ce;
 }
-
-/* Приховування одного з пунктів меню за допомогою display: none */
 .hidden-item {
     display: none;
-    /*
-      Різниця display: none та інших способів приховування:
-      - display: none повністю видаляє елемент з потоку документа (він не займає місця, не рендериться).
-      - visibility: hidden ховає елемент, але він продовжує займати своє порожнє місце на сторінці.
-      - opacity: 0 робить елемент повністю прозорим, але він залишається в потоці і реагує на події кліків.
-    */
+
 }
