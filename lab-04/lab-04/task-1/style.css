@@ -15,35 +15,35 @@ div {
     text-align: justify;
 }
 
-/* 4. Червоний колір для 1-го та 3-го абзаців */
+
 .red-text {
     color: red;
 }
 
-/* 5. Заборона перенесення рядка для 1-го абзацу */
+/* 5. Рядок не переноситься*/
 .no-wrap {
     white-space: nowrap;
 }
 
-/* 6. Курсив та жирний для 2-го абзацу через ID */
+/* 6. Курсив та жирний для 2 абзацу */
 #special-p {
     font-style: italic;
     font-weight: bold;
 }
 
-/* 7. Червона тінь для 2-го абзацу та 2-го блоку */
+/* 7. Червона тінь для 2 абзацу та 2 блоку */
 .shadow-effect {
     text-shadow: 5px -5px 3px red;
 }
 
-/* 8. Стилі для 1-го блоку (div) */
+/* 8. Стилі для 1 div*/
 .block-one {
     text-decoration: line-through;
     text-transform: uppercase;
     text-indent: 50px;
 }
 
-/* 9. Стилі для 2-го блоку (div) */
+/* 9. Стилі для 1div */
 .block-two {
     letter-spacing: 30px;
     word-spacing: 50px;

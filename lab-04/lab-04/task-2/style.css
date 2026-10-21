@@ -9,19 +9,16 @@ h1 {
     text-align: center;
     font-size: 28px;
 }
-
 /* 2. Селектор класу для підзаголовка */
 .subtitle {
     text-align: center;
     font-style: italic;
 }
-
 /* 3. Селектор класу для списку продуктів */
 .ingredients-list {
     text-align: center;
     line-height: 1.6;
 }
-
 /* Допоміжні класи для кольору та підкреслення */
 .green-text {
     color: green;
@@ -30,7 +27,6 @@ h1 {
 .underline-text {
     text-decoration: underline;
 }
-
 /* 4. Селектор тегу для лінії hr */
 hr {
     border: none;
@@ -39,7 +35,6 @@ hr {
     width: 60%;
     margin: 20px auto;
 }
-
 /* 5. Селектор ідентифікатора (ID) для нижнього блоку */
 #bottom-note {
     text-align: center;
