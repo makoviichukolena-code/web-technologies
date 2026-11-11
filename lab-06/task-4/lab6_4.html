@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 4 — Навігаційні панелі</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<nav class="navbar-horizontal">
+    <ul class="nav-menu">
+        <li class="nav-item active">
+            <a href="#" class="nav-link"><span class="material-symbols-outlined">home</span></a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link"><span class="material-symbols-outlined">search</span></a>
+
+            <ul class="dropdown">
+                <li><a href="#">Пошук товарів</a></li>
+                <li><a href="#">Пошук статей</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link"><span class="material-symbols-outlined">mail</span></a>
+            <ul class="dropdown">
+                <li><a href="#">Вхідні</a></li>
+                <li><a href="#">Надіслані</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item nav-right">
+            <a href="#" class="nav-link"><span class="material-symbols-outlined">settings</span></a>
+            <ul class="dropdown dropdown-right">
+                <li><a href="#">Профіль</a></li>
+                <li><a href="#">Налаштування</a></li>
+                <li><a href="#">Вихід</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="main-layout">
+
+    <aside class="navbar-vertical">
+        <ul class="v-menu">
+            <li class="v-item active">
+                <a href="#" class="v-link">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <span>Головна</span>
+                </a>
+            </li>
+
+            <li class="v-item">
+                <a href="#" class="v-link">
+                    <span class="material-symbols-outlined">folder</span>
+                    <span>Каталог</span>
+                </a>
+                <ul class="v-dropdown level-2">
+                    <li class="v-subitem">
+                        <a href="#">Електроніка &raquo;</a>
+                        <ul class="v-dropdown level-3">
+                            <li><a href="#">Ноутбуки</a></li>
+                            <li><a href="#">Смартфони</a></li>
+                            <li><a href="#">Планшети</a></li>
+                        </ul>
+                    </li>
+                    <li class="v-subitem">
+                        <a href="#">Одяг &raquo;</a>
+                        <ul class="v-dropdown level-3">
+                            <li><a href="#">Чоловічий</a></li>
+                            <li><a href="#">Жіночий</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="v-item">
+                <a href="#" class="v-link">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>Про нас</span>
+                </a>
+            </li>
+            <li class="v-item">
+                <a href="#" class="v-link">
+                    <span class="material-symbols-outlined">call</span>
+                    <span>Контакти</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <div class="sticky-bar">
+            <span>«Липка» навігаційна панель (position: sticky)</span>
+        </div>
+
+        <div class="demo-text">
+            <h2>Контент сторінки</h2>
+            <p>Прокрутіть сторінку донизу, щоб побачити роботу фіксованого та липкого позиціонування...</p>
+            <div style="height: 1200px; background: linear-gradient(#e0e0e0, #ffffff); border-radius: 8px; margin-top: 20px; padding: 20px;">
+                Прокручуємо контент...
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>

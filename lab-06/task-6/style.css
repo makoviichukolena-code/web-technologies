@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding-top: 20px;
+}
+
+
+.site-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px;
+    background-color: #ffffff;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+}
+.header-link:hover, .header-link:focus {
+    color: #202124;
+    outline: none;
+}
+
+
+.popup-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    color: #5f6368;
+    transition: background-color 0.2s;
+}
+
+.popup-button:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+}
+
+.popup-button:focus {
+    outline: 2px solid #1a73e8;
+    background-color: rgba(60, 64, 67, 0.08);
+}
+
+
+.popup-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+
+.popup-container {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 330px;
+    max-height: 420px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    padding: 24px 16px 16px 16px;
+    box-sizing: border-box;
+
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.25s ease;
+    z-index: 1000;
+
+
+    overflow-y: auto;
+}
+
+
+.popup-arrow {
+    position: absolute;
+    top: -6px;
+    right: 75px;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    border-top: 1px solid #dadce0;
+    border-left: 1px solid #dadce0;
+}
+
+
+#popup-toggle:checked ~ .popup-container {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.popup-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 10px;
+    text-align: center;
+}
+
+
+.popup-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 4px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+
+.popup-item:hover {
+    background-color: rgba(60, 64, 67, 0.04);
+    border-color: #dadce0;
+}
+
+.popup-item:focus {
+    outline: none;
+    border-color: #1a73e8;
+    background-color: rgba(26, 115, 232, 0.04);
+}
+
+
+.item-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.item-text {
+    font-size: 12px;
+    color: #3c4043;
+}
+
+
+.extra-item {
+    display: none;
+}
+
+
+#more-toggle:checked ~ .popup-container .extra-item {
+    display: flex;
+}
+
+
+.popup-footer {
+    margin-top: 16px;
+    border-top: 1px solid #dadce0;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.more-button {
+    display: inline-block;
+    padding: 8px 24px;
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1a73e8;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.more-button:hover {
+    background-color: #f1f3f4;
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3);
+}
+
+.more-button:focus {
+    outline: 2px solid #1a73e8;
+}
+.extra-footer-text {
+    display: none;
+    font-size: 13px;
+    color: #5f6368;
+    text-align: center;
+    padding: 4px 0;
+}
+
+#more-toggle:checked ~ .popup-container .more-button {
+    display: none;
+}
+
+#more-toggle:checked ~ .popup-container .extra-footer-text {
+    display: block;
+}
+
+
+.notification-bell, .user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-avatar {
+    background-color: #ab47bc;
+}

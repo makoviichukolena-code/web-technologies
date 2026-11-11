@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f5f7;
+    padding-top: 50px;
+}
+
+
+.navbar-horizontal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    height: 100%;
+}
+
+
+.nav-item {
+    float: left;
+    position: relative;
+    height: 100%;
+}
+
+
+.nav-item.nav-right {
+    float: right;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+
+.nav-item.active .nav-link {
+    background-color: #00b050;
+}
+
+
+.nav-item:hover .nav-link {
+    background-color: #555555;
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #444444;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+.dropdown-right {
+    left: auto;
+    right: 0;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown li a:hover {
+    background-color: #00b050;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+
+
+.main-layout {
+    display: flex;
+    min-height: calc(100vh - 50px);
+}
+
+.navbar-vertical {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 220px;
+    height: calc(100vh - 50px);
+    background-color: #0073e6;
+    z-index: 900;
+}
+
+.v-menu {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.v-item {
+    position: relative;
+}
+
+.v-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+
+.v-item.active > .v-link {
+    background-color: #0059b3;
+}
+
+.v-item:hover > .v-link {
+    background-color: #005cb8;
+}
+
+
+
+.v-dropdown.level-2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 180px;
+    background-color: #0059b3;
+    list-style: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.v-dropdown li {
+    position: relative;
+}
+
+.v-dropdown li a {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.v-dropdown li a:hover {
+    background-color: #004080;
+}
+
+.v-item:hover > .level-2 {
+    display: block;
+}
+
+
+.v-dropdown.level-3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 160px;
+    background-color: #004080;
+    list-style: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.v-subitem:hover > .level-3 {
+    display: block;
+}
+
+
+.content {
+    margin-left: 220px;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.sticky-bar {
+    position: sticky;
+    top: 50px;
+    background-color: #ffd166;
+    color: #222;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    z-index: 800;
+}
