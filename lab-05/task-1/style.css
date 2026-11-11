@@ -24,7 +24,7 @@ ul {
 
 .list-1 {
     background-color: rgb(103, 158, 128);
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px 15px 50px;
     list-style-position: inside;
 }
 
@@ -41,7 +41,7 @@ ul {
 .list-1 > li > span {
     font-size: 20px;
     font-weight: 700;
-    background-color: rgb(213 118 95);
+    background-color: rgb(199 124 106);
     display: inline-block;
     padding: 10px 20px;
     margin-bottom: 10px;

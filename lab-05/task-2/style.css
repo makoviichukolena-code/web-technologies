@@ -1,4 +1,4 @@
-/* Загальні стилі таблиці */
+
 table {
     width: 750px;
     border-collapse: collapse;
@@ -7,7 +7,7 @@ table {
     color: #333;
 }
 
-/* Шапка таблиці  */
+
 thead tr {
     background-color: #4b0082;
     color: white;
@@ -17,7 +17,7 @@ thead th:first-child {
     background-color: #36015a;
 }
 
-/* Заголовки та комірки таблиці */
+
 th, td {
     padding: 14px 10px;
     border: 1px solid #d8bfd8;
@@ -28,7 +28,7 @@ thead th:nth-child(3) { background-color: #c084fc; color: white; }
 thead th:nth-child(4) { background-color: #9333ea; color: white; }
 thead th:nth-child(5) { background-color: #7e22ce; color: white; }
 
-/* Перша колонка (назви рядків) */
+
 tbody td:first-child {
     background-color: #4b0082;
     color: white;
@@ -46,7 +46,6 @@ tbody tr:nth-child(even) {
     background-color: #e9d5ff;
 }
 
-/* Текст у комірках */
 tbody td {
     font-size: 16px;
 }
