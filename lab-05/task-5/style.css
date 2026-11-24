@@ -18,13 +18,13 @@ hr {
     margin: 30px 0;
 }
 
-/* Частина 1: box-sizing */
+
 section div.box-content,
 section div.box-border {
     width: 300px;
     padding: 20px;
     border: 5px solid #7e22ce;
-    display: inline-block; /* Блоки в ряд */
+    display: inline-block;
     vertical-align: top;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -42,10 +42,10 @@ div.box-border {
 }
 
 
-/* Частина 2: overflow */
+
 .overflow-block {
     width: 250px;
-    max-height: 80px; /* Висота обмежена */
+    max-height: 80px;
     border: 2px solid #9333ea;
     padding: 10px;
     margin-right: 15px;
@@ -74,7 +74,7 @@ div.box-border {
 }
 
 
-/*Частина 3: display */
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -90,7 +90,7 @@ nav ul > li {
 
 nav ul > li > a {
     display: block;
-    padding: 10px 20px; /* Внутрішні відступи */
+    padding: 10px 20px;
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;

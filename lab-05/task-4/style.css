@@ -2,9 +2,9 @@
 div {
     width: 300px;
     height: 200px;
-    margin-right: 20px;     /* зовнішній відступ */
+    margin-right: 20px;
     margin-bottom: 20px;
-    padding: 15px;          /*Вн відступ */
+    padding: 15px;
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
@@ -16,13 +16,13 @@ div {
     box-shadow: 0 4px 10px rgba(75, 0, 130, 0.25);
 }
 
-/* Блок 1: */
+
 .block-1 {
     background-image: linear-gradient(45deg, #7e22ce 50%, #9333ea 50%);
     background-size: 40px 40px;
 }
 
-/* Блок 2 */
+
 .block-2 {
     background-image:
             linear-gradient(90deg, rgba(216, 180, 254, 0.4) 50%, transparent 50%),
@@ -31,12 +31,12 @@ div {
     background-size: 30px 30px;
 }
 
-/* Блок 3: */
+
 .block-3 {
     background-image: radial-gradient(circle farthest-corner at 30px 20px, #e9d5ff 0%, #b8860b 50%, #4b0082 100%);
 }
 
-/* Блок 4: */
+
 .block-4 {
     background-color: #4b0082;
     background-image: linear-gradient(to top, rgba(216, 180, 254, 0.6), rgba(126, 34, 206, 0.1));
