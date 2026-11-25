@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keepsake is a digital and branding agency based in London.">
+    <title>Keepsake — a digital &amp; branding agency</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+<!-- Inline SVG sprite -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+    <symbol id="icon-monitor" viewBox="0 0 24 24"><path d="M20 3H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h6v2H8v2h8v-2h-2v-2h6a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 13H4V5h16v11z"/></symbol>
+    <symbol id="icon-video" viewBox="0 0 24 24"><path d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11l-4 4z"/></symbol>
+    <symbol id="icon-print" viewBox="0 0 24 24"><path d="M19 8H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3zm-3 11H8v-5h8v5zM18 3H6v4h12V3z"/></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="header">
+    <div class="container header__inner">
+        <a class="logo" href="#top" aria-label="Keepsake — home">
+            <span class="logo__mark" aria-hidden="true">K</span>
+            <span class="logo__text" aria-hidden="true">eepsake</span>
+        </a>
+
+        <input class="nav-toggle visually-hidden" type="checkbox" id="nav-toggle"
+               aria-label="Toggle navigation menu" aria-controls="menu">
+        <label class="burger" for="nav-toggle" aria-hidden="true">
+            <span class="burger__bar"></span>
+            <span class="burger__bar"></span>
+            <span class="burger__bar"></span>
+        </label>
+
+        <nav class="menu" id="menu" aria-label="Main navigation">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="#top" aria-current="page">Home</a></li>
+                <li><a class="nav__link" href="#about">About us</a></li>
+                <li><a class="nav__link" href="#works">Our works</a></li>
+                <li><a class="nav__link" href="#journal">Journal</a></li>
+                <li><a class="nav__link" href="#contact">Contact</a></li>
+            </ul>
+
+            <a class="fav" href="#top" aria-label="Favourites">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-heart"></use></svg>
+            </a>
+
+            <div class="menu__mobile">
+                <div class="menu__actions">
+                    <a class="btn btn--primary" href="#contact">
+                        <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-mail"></use></svg>
+                        Contact us
+                    </a>
+                    <a class="btn btn--secondary" href="#top">
+                        <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-heart"></use></svg>
+                        Favourites
+                    </a>
+                </div>
+                <div class="menu__contacts">
+                    <a class="menu__contact" href="mailto:hello@keepsake.studio">hello@keepsake.studio</a>
+                    <a class="menu__contact" href="tel:+442079460000">+44 20 7946 0000</a>
+                    <ul class="socials">
+                        <li><a class="social social--rss" href="#top" aria-label="RSS">rss</a></li>
+                        <li><a class="social social--fb" href="#top" aria-label="Facebook">f</a></li>
+                        <li><a class="social social--tw" href="#top" aria-label="Twitter">tw</a></li>
+                        <li><a class="social social--dr" href="#top" aria-label="Dribbble">dr</a></li>
+                        <li><a class="social social--pin" href="#top" aria-label="Pinterest">p</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+            <h1 class="hero__title" id="hero-title">We’re Keepsake, a digital &amp; branding agency</h1>
+            <p class="hero__text">Specializing in web design, poster, motion video, based in London. We love to turn ideas into beautiful things.</p>
+            <div class="hero__actions">
+                <a class="btn btn--primary" href="#works">See our works</a>
+                <a class="btn btn--secondary" href="#contact">Get in touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section works" id="works" aria-labelledby="works-title">
+        <div class="container">
+            <input class="filter visually-hidden" type="radio" name="filter" id="f-all" checked>
+            <input class="filter visually-hidden" type="radio" name="filter" id="f-branding">
+            <input class="filter visually-hidden" type="radio" name="filter" id="f-identity">
+            <input class="filter visually-hidden" type="radio" name="filter" id="f-print">
+            <input class="filter visually-hidden" type="radio" name="filter" id="f-web">
+            <input class="filter visually-hidden" type="radio" name="filter" id="f-motion">
+
+            <div class="works__head">
+                <h2 class="section__title" id="works-title">Our awesome works</h2>
+                <div class="chips" role="group" aria-label="Filter works by category">
+                    <label class="chip" for="f-all">All</label>
+                    <label class="chip" for="f-branding">Branding</label>
+                    <label class="chip" for="f-identity">Identity</label>
+                    <label class="chip" for="f-print">Print</label>
+                    <label class="chip" for="f-web">Web</label>
+                    <label class="chip" for="f-motion">Motion</label>
+                </div>
+            </div>
+
+            <div class="grid">
+                <article class="card" data-category="branding">
+                    <a class="card__link" href="#works">
+                        <img class="card__img" src="images/work-1.webp" alt="" width="360" height="284" loading="lazy">
+                        <span class="card__overlay">
+                <span class="card__plus" aria-hidden="true">+</span>
+                <span class="card__title">Mock-up tag</span>
+                <span class="card__line"></span>
+                <span class="card__cat">Branding</span>
+              </span>
+                    </a>
+                </article>
+                <article class="card" data-category="print">
+                    <a class="card__link" href="#works">
+                        <img class="card__img" src="images/work-2.webp" alt="" width="360" height="284" loading="lazy">
+                        <span class="card__overlay">
+                <span class="card__plus" aria-hidden="true">+</span>
+                <span class="card__title">Piece Paper</span>
+                <span class="card__line"></span>
+                <span class="card__cat">Print</span>
+              </span>
+                    </a>
+                </article>
+                <article class="card" data-category="motion">
+                    <a class="card__link" href="#works">
+                        <img class="card__img" src="images/work-3.webp" alt="" width="360" height="284" loading="lazy">
+                        <span class="card__overlay">
+                <span class="card__plus" aria-hidden="true">+</span>
+                <span class="card__title">Vinyl cover</span>
+                <span class="card__line"></span>
+                <span class="card__cat">Motion</span>
+              </span>
+                    </a>
+                </article>
+                <article class="card" data-category="print">
+                    <a class="card__link" href="#works">
+                        <img class="card__img" src="images/work-4.webp" alt="" width="360" height="284" loading="lazy">
+                        <span class="card__overlay">
+                <span class="card__plus" aria-hidden="true">+</span>
+                <span class="card__title">Vol. 16</span>
+                <span class="card__line"></span>
+                <span class="card__cat">Print</span>
+              </span>
+                    </a>
+                </article>
+                <article class="card" data-category="web">
+                    <a class="card__link" href="#works">
+                        <img class="card__img" src="images/work-5.webp" alt="" width="360" height="284" loading="lazy">
+                        <span class="card__overlay">
+                <span class="card__plus" aria-hidden="true">+</span>
+                <span class="card__title">Profile UI</span>
+                <span class="card__line"></span>
+                <span class="card__cat">Web</span>
+              </span>
+                    </a>
+                </article>
+                <article class="card" data-category="identity">
+                    <a class="card__link" href="#works">
+                        <img class="card__img" src="images/work-6.webp" alt="" width="360" height="284" loading="lazy">
+                        <span class="card__overlay">
+                <span class="card__plus" aria-hidden="true">+</span>
+                <span class="card__title">Paper set</span>
+                <span class="card__line"></span>
+                <span class="card__cat">Identity</span>
+              </span>
+                    </a>
+                </article>
+                <article class="card" data-category="branding">
+                    <a class="card__link" href="#works">
+                        <img class="card__img" src="images/work-7.webp" alt="" width="360" height="284" loading="lazy">
+                        <span class="card__overlay">
+                <span class="card__plus" aria-hidden="true">+</span>
+                <span class="card__title">Wall St.</span>
+                <span class="card__line"></span>
+                <span class="card__cat">Branding</span>
+              </span>
+                    </a>
+                </article>
+                <article class="card" data-category="identity">
+                    <a class="card__link" href="#works">
+                        <img class="card__img" src="images/work-8.webp" alt="" width="360" height="284" loading="lazy">
+                        <span class="card__overlay">
+                <span class="card__plus" aria-hidden="true">+</span>
+                <span class="card__title">John Doe</span>
+                <span class="card__line"></span>
+                <span class="card__cat">Identity</span>
+              </span>
+                    </a>
+                </article>
+                <article class="card" data-category="branding">
+                    <a class="card__link" href="#works">
+                        <img class="card__img" src="images/work-9.webp" alt="" width="360" height="284" loading="lazy">
+                        <span class="card__overlay">
+                <span class="card__plus" aria-hidden="true">+</span>
+                <span class="card__title">Seal Fabric</span>
+                <span class="card__line"></span>
+                <span class="card__cat">Branding</span>
+              </span>
+                    </a>
+                </article>
+            </div>
+
+            <div class="works__more">
+                <a class="btn btn--secondary" href="#works">Load more works</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta" aria-labelledby="cta-title">
+        <div class="container">
+            <h2 class="cta__title" id="cta-title">Would you love to work with us?</h2>
+            <a class="btn btn--primary" href="#contact">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-mail"></use></svg>
+                Contact us
+            </a>
+        </div>
+    </section>
+
+    <section class="section services" id="about" aria-labelledby="services-title">
+        <div class="container">
+            <h2 class="section__title" id="services-title">What do we do</h2>
+            <p class="section__lead">We are a small team of designers and makers who help brands look their best online and offline.</p>
+
+            <ul class="services__list">
+                <li class="service">
+                    <span class="service__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-monitor"></use></svg></span>
+                    <h3 class="service__title">Web design</h3>
+                    <p class="service__text">Responsive sites and product interfaces that look sharp on every screen.</p>
+                </li>
+                <li class="service">
+                    <span class="service__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-video"></use></svg></span>
+                    <h3 class="service__title">Motion video</h3>
+                    <p class="service__text">Explainers, logo animations and social clips that bring brands to life.</p>
+                </li>
+                <li class="service">
+                    <span class="service__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-print"></use></svg></span>
+                    <h3 class="service__title">Print design</h3>
+                    <p class="service__text">Posters, packaging and stationery prepared to be printed right.</p>
+                </li>
+                <li class="service">
+                    <span class="service__icon service__icon--accent"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-heart"></use></svg></span>
+                    <h3 class="service__title">Illustration</h3>
+                    <p class="service__text">Custom illustrations and icon sets in a style that is yours alone.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" aria-label="Studio statistics">
+        <div class="container">
+            <ul class="stats">
+                <li class="stat"><span class="stat__num">120+</span><span class="stat__label">Projects done</span></li>
+                <li class="stat"><span class="stat__num">8</span><span class="stat__label">Years in craft</span></li>
+                <li class="stat"><span class="stat__num">64</span><span class="stat__label">Happy clients</span></li>
+                <li class="stat"><span class="stat__num">15</span><span class="stat__label">Design awards</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section clients" aria-labelledby="clients-title">
+        <div class="container">
+            <h2 class="section__title" id="clients-title">Clients &amp; kind words</h2>
+            <p class="section__lead">Some of the teams that trusted us with their brands.</p>
+
+            <ul class="clients__logos">
+                <li class="client">NORDLY</li>
+                <li class="client">Halcyon</li>
+                <li class="client">ARCO</li>
+                <li class="client">pinewood</li>
+                <li class="client">VELA</li>
+                <li class="client">ostra</li>
+            </ul>
+
+            <figure class="testimonial">
+                <span class="testimonial__mark" aria-hidden="true">“</span>
+                <blockquote class="testimonial__text">
+                    <p>Keepsake turned a vague brief into a brand we are proud of. The team was fast, honest about trade-offs and obsessed with the details.</p>
+                </blockquote>
+                <figcaption class="testimonial__footer">
+            <span class="author">
+              <span class="avatar" aria-hidden="true">OM</span>
+              <span>
+                <span class="author__name">Olena Marchenko</span>
+                <span class="author__role">Marketing Lead, Nordly</span>
+              </span>
+            </span>
+                    <ul class="dots" aria-hidden="true">
+                        <li class="dots__item dots__item--active"></li>
+                        <li class="dots__item"></li>
+                        <li class="dots__item"></li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="section journal" id="journal" aria-labelledby="journal-title">
+        <div class="container">
+            <h2 class="section__title" id="journal-title">From the journal</h2>
+            <p class="section__lead">Notes on process, case studies and things that inspire us.</p>
+
+            <div class="journal__list">
+                <article class="entry">
+                    <img class="entry__img" src="images/journal-1.webp" alt="" width="150" height="150" loading="lazy">
+                    <div class="entry__body">
+                        <p class="entry__meta">Oct 13, 2026 / <span class="entry__cat">Identity</span></p>
+                        <h3 class="entry__title">Sollicitudin tortor inceptos</h3>
+                        <p class="entry__text">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <a class="entry__more" href="#journal">Read more &gt;</a>
+                    </div>
+                </article>
+                <article class="entry">
+                    <img class="entry__img" src="images/journal-2.webp" alt="" width="150" height="150" loading="lazy">
+                    <div class="entry__body">
+                        <p class="entry__meta">Oct 22, 2026 / <span class="entry__cat">Branding</span></p>
+                        <h3 class="entry__title">Amet inceptos fringilla fusce</h3>
+                        <p class="entry__text">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <a class="entry__more" href="#journal">Read more &gt;</a>
+                    </div>
+                </article>
+                <article class="entry">
+                    <img class="entry__img" src="images/journal-3.webp" alt="" width="150" height="150" loading="lazy">
+                    <div class="entry__body">
+                        <p class="entry__meta">Sep 18, 2026 / <span class="entry__cat">Identity</span></p>
+                        <h3 class="entry__title">Cursus malesuada justo</h3>
+                        <p class="entry__text">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <a class="entry__more" href="#journal">Read more &gt;</a>
+                    </div>
+                </article>
+                <article class="entry">
+                    <img class="entry__img" src="images/journal-4.webp" alt="" width="150" height="150" loading="lazy">
+                    <div class="entry__body">
+                        <p class="entry__meta">Sep 21, 2026 / <span class="entry__cat">Branding</span></p>
+                        <h3 class="entry__title">Ornare cursus bibendum purus</h3>
+                        <p class="entry__text">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <a class="entry__more" href="#journal">Read more &gt;</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer" id="contact">
+    <div class="container footer__top">
+        <section class="newsletter" aria-labelledby="newsletter-title">
+            <h2 class="footer__title" id="newsletter-title">Newsletter</h2>
+            <p class="footer__text">Fresh case studies and design notes, once a month.</p>
+
+            <form class="form" action="#subscribed" method="get">
+                <div class="form__row">
+                    <label class="visually-hidden" for="email">Your email address</label>
+                    <input class="form__input" type="email" id="email" name="email"
+                           placeholder="Your email address" required aria-describedby="email-error">
+                    <button class="btn btn--primary" type="submit">Subscribe</button>
+                </div>
+                <label class="form__consent">
+                    <input type="checkbox" name="consent" required>
+                    <span>I agree to the privacy policy</span>
+                </label>
+                <p class="form__error" id="email-error">Please enter a valid email and accept the privacy policy.</p>
+            </form>
+
+            <p class="newsletter__success" id="subscribed" role="status">You’re on the list! Check your inbox to confirm.</p>
+        </section>
+
+        <div class="footer__links">
+            <nav class="footer__col" aria-labelledby="studio-title">
+                <h2 class="footer__title" id="studio-title">Studio</h2>
+                <ul>
+                    <li><a class="footer__link" href="#about">About us</a></li>
+                    <li><a class="footer__link" href="#works">Our works</a></li>
+                    <li><a class="footer__link" href="#journal">Journal</a></li>
+                    <li><a class="footer__link" href="#top">Careers</a></li>
+                    <li><a class="footer__link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__col" aria-labelledby="services-footer-title">
+                <h2 class="footer__title" id="services-footer-title">Services</h2>
+                <ul>
+                    <li><a class="footer__link" href="#about">Web design</a></li>
+                    <li><a class="footer__link" href="#about">Motion video</a></li>
+                    <li><a class="footer__link" href="#about">Print design</a></li>
+                    <li><a class="footer__link" href="#about">Illustration</a></li>
+                    <li><a class="footer__link" href="#about">Brand strategy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+            <ul class="socials">
+                <li><a class="social social--rss" href="#top" aria-label="RSS">rss</a></li>
+                <li><a class="social social--fb" href="#top" aria-label="Facebook">f</a></li>
+                <li><a class="social social--tw" href="#top" aria-label="Twitter">tw</a></li>
+                <li><a class="social social--dr" href="#top" aria-label="Dribbble">dr</a></li>
+                <li><a class="social social--pin" href="#top" aria-label="Pinterest">p</a></li>
+            </ul>
+            <p class="footer__copy">© 2026 Keepsake. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<a class="to-top" href="#top" aria-label="Back to top">
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-up"></use></svg>
+</a>
+
+</body>
+</html>
